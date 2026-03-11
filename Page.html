@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: #24292e;
+      color: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.3rem 0 0;
+      font-size: 0.95rem;
+      opacity: 0.8;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem 3rem;
+    }
+    .post {
+      background: #fff;
+      border-radius: 6px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .post h2 {
+      margin-top: 0;
+      margin-bottom: 0.3rem;
+    }
+    .post .meta {
+      font-size: 0.8rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    .post a {
+      color: #0969da;
+      text-decoration: none;
+    }
+    .post a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 1.5rem 1rem 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Tech Blog</h1>
+    <p>Notes, experiments, and thoughts on engineering and systems.</p>
+  </header>
+
+  <main>
+    <!-- Blog post 1 -->
+    <article class="post">
+      <h2>First Post: Hello GitHub Pages</h2>
+      <div class="meta">Published on 11 March 2026</div>
+      <p>
+        This is my first blog post hosted on GitHub Pages. I’ll use this space to share
+        learnings, debugging stories, and experiments.
+      </p>
+      <p>
+        You can find the source code for this site on my
+        <a href="https://github.com/USERNAME/REPO" target="_blank" rel="noopener noreferrer">GitHub repository</a>.
+      </p>
+    </article>
+
+    <!-- Blog post 2 -->
+    <article class="post">
+      <h2>Example Post: EV Charging Debug Diary</h2>
+      <div class="meta">Published on 12 March 2026</div>
+      <p>
+        Today I worked on a tricky issue involving communication between the charger and the vehicle.
+        I’ll document the approach, tools, and final root cause here.
+      </p>
+      <ul>
+        <li><strong>Symptom:</strong> Intermittent charging session drops</li>
+        <li><strong>Tools:</strong> Custom breakout box, protocol decoder, logs</li>
+        <li><strong>Outcome:</strong> Identified timing mismatch in handshake</li>
+      </ul>
+    </article>
+
+    <!-- Add new posts by copying the block above and editing the content -->
+  </main>
+
+  <footer>
+    © <span id="year"></span> My Blog · Built with HTML & GitHub Pages
+  </footer>
+
+  <script>
+    // Auto-update year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
